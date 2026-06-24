@@ -3,3 +3,9 @@ h1 {
   font-family: Corbel;
   text-align: center;
 }
+
+/* table */
+
+table {
+  margin: auto;
+}
