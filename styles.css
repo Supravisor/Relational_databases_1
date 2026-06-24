@@ -13,3 +13,7 @@ table {
 td {
   vertical-align: top;
 }
+
+#buttons, #preview {
+  width: 38vw;
+}
