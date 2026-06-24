@@ -3,3 +3,27 @@ h1 {
   font-family: Corbel;
   text-align: center;
 }
+
+/* table */
+
+table {
+  margin: auto;
+}
+
+td {
+  vertical-align: top;
+}
+
+#buttons, #preview {
+  width: 38vw;
+  border: 3px solid black;
+  color: black;
+}
+
+#preview {
+  height: 70vh;
+}
+
+#empty {
+  width: 45vw;
+}
