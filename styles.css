@@ -20,6 +20,11 @@ td {
   color: black;
 }
 
+#buttons {
+  background: LightBlue;
+  padding: 10px;  
+}
+
 #preview {
   height: 70vh;
   border-radius: 7px;
