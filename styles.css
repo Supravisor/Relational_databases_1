@@ -1,4 +1,9 @@
 
+body {
+  background: #FFE873;
+  font-family: Arial;
+}
+
 h1 {
   font-family: Corbel;
   text-align: center;
@@ -20,10 +25,23 @@ td {
   color: black;
 }
 
+#buttons {
+  background: LightBlue;
+  padding: 10px;  
+}
+
 #preview {
   height: 70vh;
+  border-radius: 7px;
+  background: rgb(150, 150, 150);
 }
 
 #empty {
   width: 45vw;
+}
+
+#textbox {
+  position: fixed;
+  padding-left: 5vw;
+  background-color: transparent;
 }
