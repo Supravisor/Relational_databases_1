@@ -9,3 +9,7 @@ h1 {
 table {
   margin: auto;
 }
+
+td {
+  vertical-align: top;
+}
