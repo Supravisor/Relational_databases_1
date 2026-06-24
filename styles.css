@@ -23,3 +23,7 @@ td {
 #preview {
   height: 70vh;
 }
+
+#empty {
+  width: 45vw;
+}
