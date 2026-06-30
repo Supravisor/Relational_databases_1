@@ -64,3 +64,8 @@ input {
 .btn-module {
   background: #FFE873;
 }
+
+.btn-success {
+  background: #5cb85c;
+  border-color: green;
+}
