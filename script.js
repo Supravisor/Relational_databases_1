@@ -18,3 +18,8 @@ const cursor = () => {
       document.editor.textbox.value+="\ncur = conn.cursor()\ncur.execute('SELECT * From " + tablePython.value + " LIMIT 5;')\nresults = cur.fetchall()\ndf = pd.DataFrame(results)\ncur.close()\nconn.close()";
   }
 }
+
+// Using pandas read_sql method
+let tablePandas = document.getElementById("tablePandas");
+let databasePandas = document.getElementById("databasePandas");
+let index = document.getElementById("index");
