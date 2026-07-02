@@ -22,3 +22,4 @@ const cursor = () => {
 // Using pandas read_sql method
 let tablePandas = document.getElementById("tablePandas");
 let databasePandas = document.getElementById("databasePandas");
+let index = document.getElementById("index");
