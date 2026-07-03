@@ -23,3 +23,13 @@ const cursor = () => {
 let tablePandas = document.getElementById("tablePandas");
 let databasePandas = document.getElementById("databasePandas");
 let index = document.getElementById("index");
+let dates = document.getElementById("dates");
+
+const readSql = (arg) => {
+  if (databasePandas.value === "") {
+    return alert("Please enter a database name in the 'database' field, in the 'Using pandas read_sql method' section.");
+  } else if (tablePandas.value === "") {
+      return alert("Please enter a table name in the 'table' field, in the 'Using pandas read_sql method' section.");
+  }  else {
+  }
+}
