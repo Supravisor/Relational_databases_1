@@ -24,3 +24,6 @@ let tablePandas = document.getElementById("tablePandas");
 let databasePandas = document.getElementById("databasePandas");
 let index = document.getElementById("index");
 let dates = document.getElementById("dates");
+
+const readSql = (arg) => {
+}
