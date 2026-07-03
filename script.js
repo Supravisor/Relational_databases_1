@@ -26,4 +26,7 @@ let index = document.getElementById("index");
 let dates = document.getElementById("dates");
 
 const readSql = (arg) => {
+  if (databasePandas.value === "") {
+    return alert("Please enter a database name in the 'database' field, in the 'Using pandas read_sql method' section.");
+  }
 }
