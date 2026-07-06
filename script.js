@@ -36,5 +36,9 @@ const readSql = (arg) => {
       if (index.value) {
         keep += ",\n        index_col='" + index.value + "'";
       }
+
+      if (dates.value) {
+        keep += ",\n        parse_dates=['" + dates.value.replaceAll(/\s*,\s*/g, "', '") + "']";
+      }
   }
 }
