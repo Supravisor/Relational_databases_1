@@ -32,5 +32,9 @@ const readSql = (arg) => {
       return alert("Please enter a table name in the 'table' field, in the 'Using pandas read_sql method' section.");
   } else {
       let keep = "";
+
+      if (index.value) {
+        keep += ",\n        index_col='" + index.value + "'";
+      }
   }
 }
