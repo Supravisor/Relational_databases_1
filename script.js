@@ -43,6 +43,8 @@ const readSql = (arg) => {
 
       if (arg === "read_sql_table()") {
         document.editor.textbox.value+="\nengine = create_engine('sqlite:///" + databasePandas.value + ".db')\nconnection = engine.connect()\ndf = pd." + arg.slice(0, -2) + "('" + tablePandas.value + "', con=connection" + keep + ")\nconnection.close()";
+      } else {
+          document.editor.textbox.value+="\nconn = sqlite3.connect('" + databasePandas.value + ".db')\ndf = pd." + arg.slice(0, -2) + "('SELECT * FROM " + tablePandas.value + ";', conn" + keep + ")\nconnection.close()";
       }
   }
 }
