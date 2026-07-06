@@ -30,6 +30,21 @@ const readSql = (arg) => {
     return alert("Please enter a database name in the 'database' field, in the 'Using pandas read_sql method' section.");
   } else if (tablePandas.value === "") {
       return alert("Please enter a table name in the 'table' field, in the 'Using pandas read_sql method' section.");
-  }  else {
+  } else {
+      let keep = "";
+
+      if (index.value) {
+        keep += ",\n        index_col='" + index.value + "'";
+      }
+
+      if (dates.value) {
+        keep += ",\n        parse_dates=['" + dates.value.replaceAll(/\s*,\s*/g, "', '") + "']";
+      }
+
+      if (arg === "read_sql_table()") {
+        document.editor.textbox.value+="\nengine = create_engine('sqlite:///" + databasePandas.value + ".db')\nconnection = engine.connect()\ndf = pd." + arg.slice(0, -2) + "('" + tablePandas.value + "', con=connection" + keep + ")\nconnection.close()";
+      } else {
+          document.editor.textbox.value+="\nconn = sqlite3.connect('" + databasePandas.value + ".db')\ndf = pd." + arg.slice(0, -2) + "('SELECT * FROM " + tablePandas.value + ";', conn" + keep + ")\nconnection.close()";
+      }
   }
 }
