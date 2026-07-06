@@ -40,5 +40,9 @@ const readSql = (arg) => {
       if (dates.value) {
         keep += ",\n        parse_dates=['" + dates.value.replaceAll(/\s*,\s*/g, "', '") + "']";
       }
+
+      if (arg === "read_sql_table()") {
+        document.editor.textbox.value+="\nengine = create_engine('sqlite:///" + databasePandas.value + ".db')\nconnection = engine.connect()\ndf = pd." + arg.slice(0, -2) + "('" + tablePandas.value + "', con=connection" + keep + ")\nconnection.close()";
+      }
   }
 }
