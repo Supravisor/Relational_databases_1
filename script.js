@@ -30,6 +30,7 @@ const readSql = (arg) => {
     return alert("Please enter a database name in the 'database' field, in the 'Using pandas read_sql method' section.");
   } else if (tablePandas.value === "") {
       return alert("Please enter a table name in the 'table' field, in the 'Using pandas read_sql method' section.");
-  }  else {
+  } else {
+      let keep = "";
   }
 }
