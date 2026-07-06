@@ -48,3 +48,8 @@ const readSql = (arg) => {
       }
   }
 }
+
+// Data at a glance
+const data = (stat) => {
+  document.editor.textbox.value+= '\ndf' + '.' + stat;
+}
