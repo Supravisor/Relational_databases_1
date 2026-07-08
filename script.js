@@ -60,5 +60,7 @@ let column = document.getElementById("column");
 const isna = (arg) => {
   if (column.value === "") {
     return alert("Please enter a column name in the 'column' field, in the 'Data cleaning' section.");
+  } else {
+      document.editor.textbox.value+="\ndf['" + column.value + "']." + arg + ".sum()";
   }
 }
