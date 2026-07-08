@@ -53,3 +53,6 @@ const readSql = (arg) => {
 const data = (stat) => {
   document.editor.textbox.value+= '\ndf' + '.' + stat;
 }
+
+// Data cleaning
+let column = document.getElementById("column");
