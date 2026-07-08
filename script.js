@@ -56,3 +56,6 @@ const data = (stat) => {
 
 // Data cleaning
 let column = document.getElementById("column");
+
+const isna = (arg) => {
+}
