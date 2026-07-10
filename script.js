@@ -71,5 +71,7 @@ const stats = (arg) => {
     return alert("Please enter a column name in the 'column' field, in the 'Data cleaning' section.");
   } else if (arg === "quantile()") {
       document.editor.textbox.value+="\ndf['" + column.value + "']." + arg.slice(0, -1) + "[0.25, 0.5, 0.75])";
+  } else {
+      document.editor.textbox.value+="\ndf['" + column.value + "']." + arg;
   }
 }
