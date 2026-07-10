@@ -67,4 +67,7 @@ const isna = (arg) => {
 
 // Numerical analysis
 const stats = (arg) => {
+  if (column.value === "") {
+    return alert("Please enter a column name in the 'column' field, in the 'Data cleaning' section.");
+  }
 }
