@@ -64,3 +64,7 @@ const isna = (arg) => {
       document.editor.textbox.value+="\ndf['" + column.value + "']." + arg + ".sum()";
   }
 }
+
+// Numerical analysis
+const stats = (arg) => {
+}
