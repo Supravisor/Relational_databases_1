@@ -75,3 +75,7 @@ const stats = (arg) => {
       document.editor.textbox.value+="\ndf['" + column.value + "']." + arg;
   }
 }
+
+// Boolean arrays (masks)
+const boolean = (arg) => {
+}
