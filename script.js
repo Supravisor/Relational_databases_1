@@ -78,4 +78,7 @@ const stats = (arg) => {
 
 // Boolean arrays (masks)
 const boolean = (arg) => {
+  if (column.value === "") {
+    return alert("Please enter a column name in the 'column' field, in the 'Data cleaning' section.");
+  }
 }
