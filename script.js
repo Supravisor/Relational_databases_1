@@ -75,3 +75,14 @@ const stats = (arg) => {
       document.editor.textbox.value+="\ndf['" + column.value + "']." + arg;
   }
 }
+
+// Boolean arrays (masks)
+const boolean = (arg) => {
+  if (column.value === "") {
+    return alert("Please enter a column name in the 'column' field, in the 'Data cleaning' section.");
+  } else if (value.value === "") {
+      return alert("Please enter a value in the 'value' field, in the 'Boolean arrays (masks)' section.");
+  } else {
+      document.editor.textbox.value+="\ndf['" + column.value + "'] " + arg + " " + value.value;
+  }
+}
