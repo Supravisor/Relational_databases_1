@@ -79,7 +79,7 @@ input {
   border-color: #398439;
 }
 
-.btn-success, .btn-data {
+.btn-success, .btn-data, .btn-primary {
   color: white;
 }
 
