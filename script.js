@@ -88,3 +88,6 @@ const boolean = (arg) => {
       document.editor.textbox.value+="\ndf['" + column.value + "'] " + arg + " " + value.value;
   }
 }
+
+const asType = () => {
+}
