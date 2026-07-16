@@ -90,4 +90,11 @@ const boolean = (arg) => {
 }
 
 const asType = () => {
+  if (column.value === "") {
+    return alert("Please enter a column name in the 'column' field, in the 'Data cleaning' section.");
+  } else if (type.value === "") {
+      return alert("Please enter a value in the 'type' field, in the 'astype' section.");
+  } else {
+      document.editor.textbox.value+="\ndf['" + column.value + "'] = df['" + column.value + "'].astype('" + type.value + "')";
+  }
 }
