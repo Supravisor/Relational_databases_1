@@ -89,6 +89,9 @@ const boolean = (arg) => {
   }
 }
 
+// astype
+let type = document.getElementById("type");
+
 const asType = () => {
   if (column.value === "") {
     return alert("Please enter a column name in the 'column' field, in the 'Data cleaning' section.");
