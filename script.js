@@ -104,4 +104,7 @@ const asType = () => {
 
 // Create tables from DataFrame objects
 const saveSql = (arg) => {
+  if (saveTable.value === "") {
+    return alert("Please enter a table name in the 'table' field, in the 'Create tables from DataFrame objects' section.");
+  }
 }
