@@ -106,5 +106,7 @@ const asType = () => {
 const saveSql = (arg) => {
   if (saveTable.value === "") {
     return alert("Please enter a table name in the 'table' field, in the 'Create tables from DataFrame objects' section.");
+  } else {
+      document.editor.textbox.value+="\ndf.to_sql('" + saveTable.value + "', conn)\npd.read_sql_query('SELECT * FROM " + saveTable.value + ";', conn).head()";
   }
 }
