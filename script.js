@@ -101,3 +101,7 @@ const asType = () => {
       document.editor.textbox.value+="\ndf['" + column.value + "'] = df['" + column.value + "'].astype('" + type.value + "')";
   }
 }
+
+// Create tables from DataFrame objects
+const saveSql = (arg) => {
+}
