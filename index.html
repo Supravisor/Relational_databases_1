@@ -115,7 +115,20 @@
 
 <p>
   <input type="button" class="btn btn-success" value="astype()" onclick="asType();" />
-  <input class="btn" name="type" id="type" placeholder="type" type="textfield" />
+  <select name="type">
+    <option value="bool">bool</option>
+    <option value="'category'">category</option>
+    <option value="'datetime64[ns]'">datetime</option>
+    <option value="'timedelta64[ns]'">timedelta</option>
+    <option value="int">int</option>
+    <option value="'int32'">int32</option>
+    <option value="'int64'">int64</option>
+    <option value="float">float</option>
+    <option value="'float32'">float32</option>
+    <option value="'float64'">float64</option>
+    <option value="object">object</option>
+    <option value="str">str</option>
+  </select>
 </p>
 
 <hr />
