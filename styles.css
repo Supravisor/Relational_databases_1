@@ -50,7 +50,6 @@ td {
 
 input {
   padding: 2px 3px;
-  margin-left: 6px;
   margin-bottom: 6px;
 }
 
@@ -61,6 +60,9 @@ select {
   border-style: solid;
 }
 
+input, select {
+  margin-left: 6px;
+}
 .btn {
   padding: 14px 12px;
   border-radius: 4px;
