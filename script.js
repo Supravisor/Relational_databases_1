@@ -90,7 +90,7 @@ const boolean = (arg) => {
 }
 
 // astype
-let type = document.getElementById("type");
+let type = document.editor.type;
 
 const asType = () => {
   if (column.value === "") {
