@@ -98,7 +98,7 @@ const asType = () => {
   } else if (type.value === "") {
       return alert("Please enter a value in the 'type' field, in the 'astype' section.");
   } else {
-      document.editor.textbox.value+="\ndf['" + column.value + "'] = df['" + column.value + "'].astype('" + type.value + "')";
+      document.editor.textbox.value+="\ndf['" + column.value + "'] = df['" + column.value + "'].astype(" + type.value + ")";
   }
 }
 
