@@ -54,6 +54,13 @@ input {
   margin-bottom: 6px;
 }
 
+select {
+  padding: 13px 12px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+}
+
 .btn {
   padding: 14px 12px;
   border-radius: 4px;
