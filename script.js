@@ -110,3 +110,7 @@ const saveSql = (arg) => {
       document.editor.textbox.value+="\ndf.to_sql('" + saveTable.value + "', conn)\npd.read_sql_query('SELECT * FROM " + saveTable.value + ";', conn).head()";
   }
 }
+
+// if_exists
+const exists = (arg) => {
+}
