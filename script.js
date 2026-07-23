@@ -118,5 +118,9 @@ const exists = (arg) => {
   } else {
 
       let keep = "";
+
+      if (ifExists.value) {
+        keep += ", " + ifExists.name + "='" + ifExists.value + "'";
+      }
   }
 }
