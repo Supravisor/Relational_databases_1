@@ -128,5 +128,7 @@ const exists = (arg) => {
       } else {
           arg = arg.slice(0, -2) + "()";
       }
+
+        document.editor.textbox.value+="\n" + arg + ".to_sql('" + saveTable.value + "', conn" + keep + ")\npd.read_sql_query('SELECT * FROM " + saveTable.value + ";', conn).head()\nconn.close()";
   }
 }
