@@ -112,6 +112,8 @@ const saveSql = (arg) => {
 }
 
 // if_exists
+let ifExists = document.editor.if_exists;
+
 const exists = (arg) => {
   if (saveTable.value === "") {
     return alert("Please enter a table name in the 'table' field, in the 'Create tables from DataFrame objects' section.");
