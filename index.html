@@ -139,6 +139,25 @@
   <input class="btn" name="saveTable" id="saveTable" placeholder="table" type="textfield" />
 </p>
 
+<hr />
+<h2>if_exists</h2>
+
+<p>
+  <input type="button" class="btn btn-success" value="pd.DataFrame()" onclick="exists(this.value);" />
+  <input type="button" class="btn btn-success" value="df.to_sql()" onclick="exists(this.value);" />
+</p>
+
+<p>
+  <label>
+    if_exists
+    <select name="if_exists">
+      <option value=""></option>     
+      <option value="append">append</option>
+      <option value="fail">fail</option>
+      <option value="replace">replace</option>
+    </select>
+  </label>
+</p>
           </div>
         </td>
         <td id="textbox">

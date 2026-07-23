@@ -110,3 +110,27 @@ const saveSql = (arg) => {
       document.editor.textbox.value+="\ndf.to_sql('" + saveTable.value + "', conn)\npd.read_sql_query('SELECT * FROM " + saveTable.value + ";', conn).head()";
   }
 }
+
+// if_exists
+let ifExists = document.editor.if_exists;
+
+const exists = (arg) => {
+  if (saveTable.value === "") {
+    return alert("Please enter a table name in the 'table' field, in the 'Create tables from DataFrame objects' section.");
+  } else {
+
+      let keep = "";
+
+      if (ifExists.value) {
+        keep += ", " + ifExists.name + "='" + ifExists.value + "'";
+      }
+
+      if (arg === "df.to_sql()") {
+        arg = arg.slice(0, 2);
+      } else {
+          arg = arg.slice(0, -2) + "()";
+      }
+
+        document.editor.textbox.value+="\n" + arg + ".to_sql('" + saveTable.value + "', conn" + keep + ")\npd.read_sql_query('SELECT * FROM " + saveTable.value + ";', conn).head()\nconn.close()";
+  }
+}
