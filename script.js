@@ -122,5 +122,9 @@ const exists = (arg) => {
       if (ifExists.value) {
         keep += ", " + ifExists.name + "='" + ifExists.value + "'";
       }
+
+      if (arg === "df.to_sql()") {
+        arg = arg.slice(0, 2);
+      }
   }
 }
