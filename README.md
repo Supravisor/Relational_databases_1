@@ -6,3 +6,5 @@ Single-click buttons for instantly creating syntactically correct code.
 
 ## Usage instructions
 Click the desired button, and if any user input is required, an alert will indicate where to find the input element.
+
+Here is the live link to [Relational Databases 1](https://supravisor.github.io/Relational_databases_1/).
