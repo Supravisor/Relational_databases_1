@@ -60,6 +60,13 @@ select {
   border-style: solid;
 }
 
+label > select {
+  display: block;
+  position: relative;
+  left: 10em;
+  top: -2.5em;
+}
+
 input, select {
   margin-left: 6px;
 }
